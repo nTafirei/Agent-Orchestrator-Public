@@ -1,0 +1,55 @@
+Stock Details
+Stock Ticker: AFDS (African Distillers Limited)
+Exchange: Zimbabwe Stock Exchange (ZSE)
+Industry: Drink Distillation
+
+Research Requirements
+
+Company Overview:
+Provide a brief summary of African Distillers' business operations, products, and services.
+Outline the company's mission, vision, and values.
+
+Financial Analysis:
+Retrieve and analyze the company's historical financial data (e.g., income statements, balance sheets,
+cash flow statements) for the past 3-5 years.
+Calculate key financial ratios (e.g., P/E, P/B, debt-to-equity) and compare them to industry averages.
+
+Market and Industry Analysis:
+Analyze the current market trends and outlook for the biotechnology industry.
+Identify key competitors and their market share.
+
+News and Sentiment Analysis:
+Retrieve and analyze recent news articles (e.g., past 6 months) related to African Distillers.
+Assess the overall sentiment of the news articles (e.g., positive, negative, neutral).
+
+Valuation and Price Target:
+Estimate the company's intrinsic value using a suitable valuation model (e.g., DCF, comparables).
+Provide a price target range based on the valuation analysis.
+
+Risk Factors and Concerns:
+Identify potential risk factors and concerns that may impact the company's stock performance
+(e.g., regulatory risks, competition, financial leverage).
+
+Data Sources
+Use publicly available data sources, such as:
+Company website and investor relations
+Financial databases (e.g., Bloomberg, Thomson Reuters)
+News articles and press releases
+Industry reports and research studies
+
+Format and Length
+Present the research report in a clear and concise format, approximately 10-12 pages in length.
+Use headings, subheadings, and bullet points to enhance readability.
+Include data visualizations (e.g., charts, graphs, tables) to support the analysis.
+Explain your reasoning in a clearly separate and labelled section to allow for readability and parsing
+
+Evaluation Criteria
+The generated stock research report will be evaluated on the following criteria:
+Accuracy and completeness of financial data and analysis
+Depth and insight of market and industry analysis
+Effectiveness of valuation and price target analysis
+Clarity and coherence of writing and data visualization
+Relevance and usefulness of the research report for investment decisions
+
+Please generate a comprehensive stock research report that meets all the requirements and evaluation
+criteria outlined above.

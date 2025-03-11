@@ -1,0 +1,52 @@
+Overview
+Create a comprehensive business plan for a fictional startup company.
+The plan should include all essential elements of a traditional business plan.
+Company Details
+Company Name: GreenCycle
+Industry: Sustainable Waste Management
+Location: Harare, Zimbabwe
+Founders: 3 entrepreneurs with experience in environmental science, business management, and engineering
+
+Business Plan Requirements
+
+Executive Summary (150-200 words):
+Provide an overview of GreenCycle's mission, products/services, target market, and goals.
+
+Company Description:
+Outline GreenCycle's structure, ownership, and management team.
+
+Market Analysis:
+Analyze the sustainable waste management industry in Zimbabwe, including market size,
+growth potential, trends, and competitors.
+
+Products/Services: Describe GreenCycle's offerings, including waste collection, recycling, and composting
+services.
+
+Marketing and Sales Strategy:
+Outline GreenCycle's marketing and sales plans, including target customer
+segments, pricing, and revenue projections.
+
+Operations Plan:
+Describe GreenCycle's operational structure, including logistics, equipment, and personnel.
+Management and Organization: Outline GreenCycle's management team, organizational structure, and human
+resources plan.
+
+Financial Projections:
+Provide 3-year financial projections, including income statements, balance sheets,
+and cash flow statements.
+
+Additional Requirements
+
+The business plan should be 10-12 pages in length, excluding appendices.
+Use a formal business tone and format.
+Include headings, subheadings, and bullet points to enhance readability.
+Use USD currency for financial projections.
+Explain your reasoning in a clearly separate and labelled section to allow for readability and parsing
+
+Evaluation Criteria
+The generated business plan will be evaluated on the following criteria:
+Completeness and accuracy of all required sections
+Clarity and coherence of writing
+Realism and feasibility of business plan assumptions
+Effectiveness of marketing and sales strategies
+Soundness of financial projections and assumptions
