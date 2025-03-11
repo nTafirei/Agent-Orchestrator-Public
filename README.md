@@ -5,7 +5,6 @@
 <h4 align="center">MaroTech AI Agent Automation Platform</h4>
 
 <div>
-    <a href="http://www.apache.org/licenses/LICENSE-2.0"><img alt="Apache Licenses 2.0" src="assets/apache.svg"/></a>
     <a href="https://github.com/nTafirei/Agent-Orchestrator"><img alt="MaroTech" src="assets/logo.jpg" height="20" width ="20"/>MaroTech</a>
     <a href="https://www.java.com/en/">  <img  alt="Java: 17.0.2" src="assets/java.svg"/></a>
     <a href="https://spring.io/projects/spring" >  <img alt="Spring 6.2.2" src="assets/spring.png" height="20" width ="20"/>Spring AI</a>
@@ -24,13 +23,7 @@ alt="linux" width="40" height="40" style="max-width: 100%;"> </a> <a href="https
 alt="mocha" width="40" height="40" data-canonical-src="https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg" 
 style="max-width: 100%;"> </a> <a href="https://www.postgresql.org" rel="nofollow"> 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" 
-alt="postgresql" width="40" height="40" style="max-width: 100%;"> </a> 
-<a href="https://reactjs.org/" rel="nofollow"> 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" 
-alt="react" width="40" height="40" style="max-width: 100%;"> </a> <a href="https://redux.js.org" rel="nofollow"> 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" 
-width="40" height="40" style="max-width: 100%;"> </a> <a href="https://www.selenium.dev" rel="nofollow"> 
-<img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40" style="max-width: 100%;"> </a>
+alt="postgresql" width="40" height="40" style="max-width: 100%;"> </a>
 <a href="https://spring.io/" rel="nofollow"> 
 <img src="https://camo.githubusercontent.com/53f0f04650bfc2aef2ec4fd578d1fca0ef7ecafe5a802eea6b8ee597cad9f936/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f737072696e67696f2f737072696e67696f2d69636f6e2e737667" 
 alt="spring" width="40" height="40" data-canonical-src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" 
@@ -47,14 +40,13 @@ viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
 
 <a name="getting-started">How to start</a>
 <br/>
-Here is how to get started
-<br/>
-
 Dependencies:
+<br/>
 Java 17
+<br/>
 MySQL or PostGreSQL (I use MYSQL 8 and PostGreSQL 17)
 <br/>
-Here are the maven coordinates<br/>
+Here are the maven coordinates<br/><br/>
 
 ``` 
         <dependency>
@@ -68,32 +60,30 @@ Here are the maven coordinates<br/>
             <version>>42.7.5</version>
         </dependency>
 ``` 
-The default configuration is for MySQL.<br/>
+The default configuration is for MySQL<br/>
 You can manage all database related configurations in <br/>
-{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/hikarig.properties <br/>
+{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/hikarig.properties 
+<br/>
 and<br/>
-{ROOT_DIR}tomcat11/webapps/orchestrator/WEB-INF/classes/spring-config.xml
+{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/spring-config.xml
 <br/>
 Should you change from MySQl to another database, you need to modify these settings for
 jpaVendorAdapter and entityManagerFactory beans in spring-config.xml <br/>
+<br/>
+and
+<br/>
+{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/hikarig.properties
+<br/>
+jdbcUrl=jdbc:mysql://localhost:3306/orchestrator?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true <br/>
+username=orchestrator_user <br/>
+password=********** <br/>
+driverClassName=com.mysql.cj.jdbc.Driver<br/>
+<br/>
 
 Create a database using the settings in <br/>
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/hikarig.properties <br/>
-
 <br/>
-Next
-``` 
-   cd {ROOT_DIR}/tomcat11/bin <br/>
-   startup.sh ('Nix platforms) <br/>
-   or<br/>
-   startup.bat (windows)<br/>
-``` 
-Then<br/>
-`cd orchestrator`
-<br/>
-Create a MYSQL database using information available in 
-Agent-Orchestrator/orchestrator/src/main/resources/hikari.properties
-The application uses the following JDBC driver:
+By default, the application uses the following JDBC driver:
 ``` 
         <dependency>
             <groupId>mysql</groupId>
@@ -101,6 +91,15 @@ The application uses the following JDBC driver:
             <version>8.0.18</version>
         </dependency>
 ``` 
+Hence: driverClassName=com.mysql.cj.jdbc.Driver
+<br/>
+Next
+<br/>
+   cd {ROOT_DIR}/tomcat11/bin <br/>
+   startup.sh ('Nix platforms) <br/>
+   or<br/>
+   startup.bat (windows)<br/>
+<br/>
 <br/>
 The application is available at http://localhost:9080/orchestrator/web/login
 <br/>
@@ -138,21 +137,7 @@ Sample Prompts
 <img src="assets/chat.png" height="200" width ="200"/>				
 <img src="assets/workflows.png" height="200" width ="200"/>
 <br/>
-
-Coming soon!
 <br/>
-<a name="release-notes">Release notes</a>
-<br/>
-Coming soon!
-<br/>
-Agent Orchestrator is constantly changing. Keep checking this page for updates
-
-<br/>
-<a name="support">Support</a>
-<br/>
-Coming soon!
-
-<br/><br/>
 <strong>What is Task Automation and what is an AI Agent? </strong>
 <br/>
 Task Automation and AI Agents are two related but distinct concepts in the field of artificial
