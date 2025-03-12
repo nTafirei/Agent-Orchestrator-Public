@@ -44,7 +44,7 @@ Dependencies:
 <br/>
 Java 17
 <br/>
-HSQLDB, MySQL or PostGreSQL (I use MYSQL 8 and PostGreSQL 17, but HSQLDB is used for quick demos)
+HSQLDB, MYSQL or PostGreSQL (I use MYSQL 8 and PostGreSQL 17, but HSQLDB is used for quick demos)
 <br/>
 Here are the maven coordinates<br/><br/>
 
@@ -55,8 +55,8 @@ Here are the maven coordinates<br/><br/>
             <version>2.7.4</version>
         </dependency>
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
+            <groupId>MYSQL</groupId>
+            <artifactId>MYSQL-connector-java</artifactId>
             <version>8.0.18</version>
         </dependency>
         <dependency>
@@ -68,7 +68,7 @@ Here are the maven coordinates<br/><br/>
 The demo configuration is HSQLDB<br/>
 You can manage all database related configurations in <br/>
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/{PLATFORM}-hikari.properties <br/>
-(e.g. {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/mysql-hikari.properties)<br/>
+(e.g. {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/MYSQL-hikari.properties)<br/>
 <br/>
 and<br/>
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/spring-config.xml
@@ -85,7 +85,7 @@ password=orchestrator_user<br/>
 driverClassName=org.hsqldb.jdbc.JDBCDriver<br/>
 <br/>
 
-If you choose to use MySQL of PostGreSQL, then <br/>
+If you choose to use MYSQL of PostGreSQL, then <br/>
 Create a database using the settings in <br/>
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/msql-hikari.properties or <br/>
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/postgres-hikari.properties<br/>
