@@ -65,9 +65,10 @@ Here are the maven coordinates<br/><br/>
             <version>>42.7.5</version>
         </dependency>
 ``` 
-The demo configuration is HSQLDB MySQL<br/>
+The demo configuration is HSQLDB<br/>
 You can manage all database related configurations in <br/>
-{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/hikari.properties 
+{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/{PLATFORM}.properties <br/>
+(e.g. {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/mysql-hikari.properties)<br/>
 <br/>
 and<br/>
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/spring-config.xml
