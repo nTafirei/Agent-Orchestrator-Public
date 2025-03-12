@@ -1,0 +1,26 @@
+# Intellij
+**/.idea/
+*.iml
+*.iws
+*.tar
+*.zip
+*.jar
+*.class
+*.exe
+*.log
+.DS_Store
+marotech.com/
+dist/
+
+# Atlassian IDE plugin
+atlassian-ide-plugin.xml
+
+
+# Mac
+._*
+.Spotlight-V100
+.Trashes
+
+# Maven
+**/target/
+

@@ -110,7 +110,7 @@ Next
 <br/>
 <br/>
 The application is available at 
-<a href="http://localhost:9080/orchestrator/web/login">http://localhost:9080/orchestrator/web/login</a>
+<a href="http://localhost:9080/orchestrator/web/login">http://localhost:8080/orchestrator/web/login</a>
 <br/>
 Demo credentials are hard coded on the login page at the bottom
 <br/>
@@ -133,7 +133,7 @@ Sample Prompts
 <br/>
 <br/>
 <a name="screenshots">Application screenshots</a>
-<br/>
+<br/><br/>
 <img src="assets/agent-details.png" height="200" width ="200"/>	
 <img src="assets/cron-tool.png" height="200" width ="200"/>		
 <img src="assets/task-details.png" height="200" width ="200"/>
@@ -207,7 +207,7 @@ whereas task automation relies on predefined rules and scripts.
 Autonomy: AI agents operate independently, while task automation typically requires 
 human oversight and intervention.
 <br/>
-To illustrate the difference, consider a customer service chatbot:
+To illustrate the difference, consider a customer service chat bot:
 Task automation would involve automating specific tasks, such as responding to
 frequently asked questions or 
 routing customer inquiries.
