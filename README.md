@@ -29,9 +29,9 @@ style="max-width: 100%;"> </a> </p>
 viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
 <path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 
-The MaroTech Agent Automation Platform is a AI automation and workflow management system.
+The MaroTech Agent Automation Platform is an AI automation and workflow management system.
 It solves the problem of orchestrating and controlling multiple cross-organisational 
-AI agents – removing complexity, securing control, and enabling businesses to thrive in an AI age.
+AI agents – removing complexity, securing control, and enabling businesses to thrive in the AI age.
 <p>
 <a href="https://github.com/nTafirei/Agent-Orchestrator-Public">Download it here</a>
 </p>
@@ -44,11 +44,16 @@ Dependencies:
 <br/>
 Java 17
 <br/>
-MySQL or PostGreSQL (I use MYSQL 8 and PostGreSQL 17)
+HSQLDB, MySQL or PostGreSQL (I use MYSQL 8 and PostGreSQL 17, but HSQLDB is used for quick demos)
 <br/>
 Here are the maven coordinates<br/><br/>
 
 ``` 
+        <dependency>
+            <groupId>hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.7.4</version>
+        </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -60,9 +65,9 @@ Here are the maven coordinates<br/><br/>
             <version>>42.7.5</version>
         </dependency>
 ``` 
-The default configuration is for MySQL<br/>
+The demo configuration is HSQLDB MySQL<br/>
 You can manage all database related configurations in <br/>
-{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/hikarig.properties 
+{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/hikari.properties 
 <br/>
 and<br/>
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/spring-config.xml
@@ -72,26 +77,40 @@ jpaVendorAdapter and entityManagerFactory beans in spring-config.xml <br/>
 <br/>
 and
 <br/>
-{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/hikarig.properties
+
+For HSQLDB (default for demo), the properties are in:<br/>
+
+{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/hsqldb-spring-db.xml and <br/>
+{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/hsqldb-hikari.properties
 <br/>
-jdbcUrl=jdbc:mysql://localhost:3306/orchestrator?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true <br/>
+jdbcUrl=jdbc:hsqldb:orchestrator <br/>
 username=orchestrator_user <br/>
-password=********** <br/>
-driverClassName=com.mysql.cj.jdbc.Driver<br/>
+password=orchestrator_user<br/>
+driverClassName=org.hsqldb.jdbc.JDBCDriver<br/>
 <br/>
 
+If you choose to use MySQL of PostGreSQL, then <br/>
 Create a database using the settings in <br/>
-{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/hikarig.properties <br/>
+{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/msql-hikari.properties or <br/>
+{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/postgres-hikari.properties<br/>
 <br/>
-By default, the application uses the following JDBC driver:
+<br/>
+By default, the application uses the following database settings:
 ``` 
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.18</version>
+            <groupId>hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.7.4</version>
         </dependency>
 ``` 
-Hence: driverClassName=com.mysql.cj.jdbc.Driver
+Hence: driverClassName=org.hsqldb.jdbc.JDBCDriver
+
+To change database platform, change this line is 
+{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/spring-config.xml
+``` 
+   <import resource="hsqldb-spring-db.xml"/>
+``` 
+
 <br/>
 Next
 <br/>
