@@ -116,7 +116,8 @@ Next
    startup.bat (windows)<br/>
 <br/>
 <br/>
-The application is available at http://localhost:9080/orchestrator/web/login
+The application is available at 
+<a href="http://localhost:9080/orchestrator/web/login">http://localhost:9080/orchestrator/web/login</a>
 <br/>
 You can view the logs in {ROOT_DIR}/tomcat11/logs/catalina.out
 <br/>
