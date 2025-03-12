@@ -67,16 +67,11 @@ Here are the maven coordinates<br/><br/>
 ``` 
 The demo configuration is HSQLDB<br/>
 You can manage all database related configurations in <br/>
-{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/{PLATFORM}.properties <br/>
+{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/{PLATFORM}-hikari.properties <br/>
 (e.g. {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/mysql-hikari.properties)<br/>
 <br/>
 and<br/>
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/spring-config.xml
-<br/>
-Should you change from MySQl to another database, you need to modify these settings for
-jpaVendorAdapter and entityManagerFactory beans in spring-config.xml <br/>
-<br/>
-and
 <br/>
 
 For HSQLDB (default for demo), the properties are in:<br/>
