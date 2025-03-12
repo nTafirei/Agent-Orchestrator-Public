@@ -119,6 +119,8 @@ Next
 The application is available at 
 <a href="http://localhost:9080/orchestrator/web/login">http://localhost:9080/orchestrator/web/login</a>
 <br/>
+Demo credentials are hard coded on the login page at the bottom
+<br/>
 You can view the logs in {ROOT_DIR}/tomcat11/logs/catalina.out
 <br/>
 <br/>
