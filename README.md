@@ -88,18 +88,6 @@ password=orchestrator_user<br/>
 driverClassName=org.hsqldb.jdbc.JDBCDriver<br/>
 <br/>
 
-<br/>
-By default, the application uses the following database settings:
-``` 
-        <dependency>
-            <groupId>hsqldb</groupId>
-            <artifactId>hsqldb</artifactId>
-            <version>2.7.4</version>
-        </dependency>
-``` 
-Hence: driverClassName=org.hsqldb.jdbc.JDBCDriver
-<br/>
-
 If you choose to use MYSQL of PostGreSQL, then <br/>
 Create a database using the settings in <br/>
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/mysql-hikari.properties or <br/>
