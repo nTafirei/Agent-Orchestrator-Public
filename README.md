@@ -67,11 +67,14 @@ Here are the maven coordinates<br/><br/>
 ``` 
 The demo configuration is HSQLDB<br/>
 You can manage all database related configurations in <br/>
+{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/spring-config.xml<br/>
+and
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/{PLATFORM}-hikari.properties <br/>
 (e.g. {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/mysql-hikari.properties)<br/>
 <br/>
 and<br/>
-{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/spring-config.xml
+{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/{PLATFORM}-spring-db.xml<br/>
+(e.g. {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/mysql-spring-db.xml)<br/>
 <br/>
 
 For HSQLDB (default for demo), the properties are in:<br/>
@@ -85,11 +88,6 @@ password=orchestrator_user<br/>
 driverClassName=org.hsqldb.jdbc.JDBCDriver<br/>
 <br/>
 
-If you choose to use MYSQL of PostGreSQL, then <br/>
-Create a database using the settings in <br/>
-{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/mysql-hikari.properties or <br/>
-{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/postgres-hikari.properties<br/>
-<br/>
 <br/>
 By default, the application uses the following database settings:
 ``` 
@@ -100,8 +98,15 @@ By default, the application uses the following database settings:
         </dependency>
 ``` 
 Hence: driverClassName=org.hsqldb.jdbc.JDBCDriver
+<br/>
 
-To change database platform, change this line is 
+If you choose to use MYSQL of PostGreSQL, then <br/>
+Create a database using the settings in <br/>
+{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/mysql-hikari.properties or <br/>
+{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/postgres-hikari.properties<br/>
+<br/>
+
+To change the database platform, change this line in<br/>
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/spring-config.xml
 ``` 
    <import resource="hsqldb-spring-db.xml"/>
