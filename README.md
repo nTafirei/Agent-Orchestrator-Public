@@ -110,7 +110,7 @@ Next
 <br/>
 <br/>
 The application is available at 
-<a href="http://localhost:8080/orchestrator/web/login">http://localhost:8080/orchestrator/web/login</a>
+<a href="http://localhost:8080/orchestrator/web/login" target="_blank">http://localhost:8080/orchestrator/web/login</a>
 <br/>
 Demo credentials are hard coded on the login page at the bottom
 <br/>
