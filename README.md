@@ -117,9 +117,10 @@ Demo credentials are hard coded on the login page at the bottom
 You can view the logs in {ROOT_DIR}/tomcat11/logs/catalina.out
 <br/><br/>
 Warnings and Limitations
-<br/><br/>
+<br/>
 Vector embeddings for RAG are currently only available for PostGreSQL with pg_vector<br/>
 <a href="https://github.com/pgvector/pgvector">https://github.com/pgvector/pgvector</a>
+<br/>
 <br/>
 Sample Prompts
 <br/>
