@@ -23,10 +23,10 @@ alt="postgresql" width="40" height="40" style="max-width: 100%;"> </a>
 <img src="https://camo.githubusercontent.com/53f0f04650bfc2aef2ec4fd578d1fca0ef7ecafe5a802eea6b8ee597cad9f936/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f737072696e67696f2f737072696e67696f2d69636f6e2e737667" 
 alt="spring" width="40" height="40" data-canonical-src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" 
 style="max-width: 100%;"> </a> 
-<a href="https://ollama.com">
+<a href="https://ollama.com" target="_blank">
 <img src="https://ollama.com/public/ollama.png" width="40" height="40"/>Ollama</a> |
-<a href="https://www.deepseek.com/">DeepSeek</a> |
-<a href="https://openai.com/">OpenAI</a>
+<a href="https://www.deepseek.com/" target="_blank">DeepSeek</a> |
+<a href="https://openai.com/" target="_blank">OpenAI</a>
 </p>
 <br>
 <div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">📌Contents</h3>
