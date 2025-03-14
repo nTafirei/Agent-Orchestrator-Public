@@ -102,12 +102,11 @@ Create a database using the settings in <br/>
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/postgres-hikari.properties<br/>
 <br/>
 
-To change the database platform, change this line<br/>
+To change the database platform, change this line
 ``` 
    <import resource="hsqldb-spring-db.xml"/>
 ``` 
-<br/>in {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/spring-config.xml
-
+in {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/spring-config.xml
 
 <br/>
 Next
