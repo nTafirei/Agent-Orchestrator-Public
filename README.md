@@ -172,7 +172,7 @@ automation. Here's a breakdown of the differences:
 <strong>Task Automation</strong>
 <br/>
 Task automation refers to the use of technology to automate repetitive, mundane, 
-or time-consuming tasks. 
+or time-consuming tasks.<br/> 
 The primary goal is to increase efficiency, reduce manual labor, and improve accuracy.
 
 <br/>
@@ -203,6 +203,7 @@ and problem-solving.
 Autonomy:
 <br/>
 AI agents can operate independently, adapting to new situations and learning from experience.
+<br/>
 Flexibility: AI agents can handle a wide range of tasks, from simple to complex, 
 and can be integrated with 
 various systems and data sources.
