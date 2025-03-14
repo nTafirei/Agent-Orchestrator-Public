@@ -25,7 +25,7 @@ alt="spring" width="40" height="40" data-canonical-src="https://www.vectorlogo.z
 style="max-width: 100%;"> </a> 
 <a href="https://ollama.com">
 <img src="https://ollama.com/public/ollama.png" width="40" height="40"/>Ollama</a> |
-<a hre="https://www.deepseek.com/">DeepSeek</a> |
+<a href="https://www.deepseek.com/">DeepSeek</a> |
 <a href="https://openai.com/">OpenAI</a>
 </p>
 <br>
