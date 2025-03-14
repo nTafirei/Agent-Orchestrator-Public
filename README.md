@@ -96,17 +96,18 @@ password=orchestrator_user<br/>
 driverClassName=org.hsqldb.jdbc.JDBCDriver<br/>
 <br/>
 
-If you choose to use MYSQL of PostGreSQL, then <br/>
+If you choose to use MYSQL or PostGreSQL, then <br/>
 Create a database using the settings in <br/>
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/mysql-hikari.properties or <br/>
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/postgres-hikari.properties<br/>
 <br/>
 
-To change the database platform, change this line in<br/>
-{ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/spring-config.xml
+To change the database platform, change this line<br/>
 ``` 
    <import resource="hsqldb-spring-db.xml"/>
 ``` 
+<br/>in {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/spring-config.xml
+
 
 <br/>
 Next
@@ -114,7 +115,7 @@ Next
    cd {ROOT_DIR}/tomcat11/bin <br/>
    startup.sh ('Nix platforms) <br/>
    or<br/>
-   startup.bat (windows)<br/>
+   startup.bat (Windows)<br/>
 <br/>
 <br/>
 The application is available at 
