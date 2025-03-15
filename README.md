@@ -137,8 +137,8 @@ Ollama Config<br/>
 In {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/config.properties<br/>
 these are the properties that you can change to control server settings and 
 which language model to use <br/>
-platform.language.model=mock <br/>  
-platform.ollama.host=http://localhost:11434/ollama
+platform.language.service.option=mock (change to ollama for the real service)<br/>
+platform.ollama.host=http://localhost/ollama:11434
 <br/>
 see https://github.com/ollama4j/ollama4j/blob/main/src/main/java/io/github/ollama4j/types/OllamaModelType.java <br/>
 for all the available options
