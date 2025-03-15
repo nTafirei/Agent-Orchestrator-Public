@@ -7,7 +7,7 @@
 <div>
     <a href="https://github.com/nTafirei/Agent-Orchestrator"><img alt="MaroTech" src="assets/logo.jpg" height="20" width ="20"/>MaroTech</a>
     <a href="https://www.java.com/en/">  <img  alt="Java: 17.0.2" src="assets/java.svg"/></a>
-    <a href="https://spring.io/projects/spring" >  <img alt="Spring 6.2.2" src="assets/spring.png" height="20" width ="20"/>Spring AI</a>
+    <a href="https://spring.io/projects/spring" >  <img alt="Spring 6.2.2" src="assets/spring.png" height="20" width ="20"/>Spring</a>
     <a href="https://github.com/StripesFramework" > <img alt="Stripes" src="assets/stripes.png" height="20" width ="20"/>Stripes</a>
 
 <br>
