@@ -38,11 +38,7 @@ The MaroTech Agent Automation Platform is an AI automation and workflow manageme
 It solves the problem of orchestrating and controlling multiple cross-organisational 
 AI agents – removing complexity, securing control, and enabling businesses to thrive in the AI age.
 <p>
-<!--
-<a href="https://github.com/nTafirei/Agent-Orchestrator-Public/dist.zip">Download it here</a>
--->
-
-<br/>Tldr;!!
+<br/>Tl;dr
 <br/>
 Download <a href="https://github.com/nTafirei/Agent-Orchestrator-Public/blob/master/dist.zip">dist.zip</a>
 <br/>
