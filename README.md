@@ -46,6 +46,8 @@ AI agents – removing complexity, securing control, and enabling businesses to 
 <br/>
 Download <a href="https://github.com/nTafirei/Agent-Orchestrator-Public/blob/master/dist.zip">dist.zip</a>
 <br/>
+Unpack the distribution
+<br/>
 cd {ROOT_DIR}/tomcat11/bin <br/>
 startup.sh ('Nix platforms) <br/>
 or<br/>
