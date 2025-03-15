@@ -47,8 +47,8 @@ Download coming soon!! <a href="mailto:nkasvosve@gmail.com">Email us for an earl
 💡 <a href="#screenshots">Application screenshots</a><br>
 
 <a name="getting-started">How to start</a>
-<br/>
-Dependencies:
+<br/><br/>
+Runtime Dependencies:
 <br/>
 Java 17
 <br/>
