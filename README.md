@@ -41,7 +41,23 @@ AI agents – removing complexity, securing control, and enabling businesses to 
 <!--
 <a href="https://github.com/nTafirei/Agent-Orchestrator-Public/dist.zip">Download it here</a>
 -->
-Download coming soon!! <a href="mailto:nkasvosve@gmail.com">Email us for an early preview</a> 
+
+<br/>Tldr;!!
+<br/>
+Download <a href="https://github.com/nTafirei/Agent-Orchestrator-Public/blob/master/dist.zip">dist.zip</a>
+<br/>
+cd {ROOT_DIR}/tomcat11/bin <br/>
+startup.sh ('Nix platforms) <br/>
+or<br/>
+startup.bat (Windows)<br/>
+<br/>
+The application is available at
+<a href="http://localhost:8080/orchestrator/web/login" target="_blank">http://localhost:8080/orchestrator/web/login</a>
+<br/>
+Demo credentials are hard coded on the login page at the bottom
+<br/>
+You can view the logs in {ROOT_DIR}/tomcat11/logs/catalina.out
+<br/>
 </p>
 <p dir="auto">🚀 <a href="#-getting-started">How to start</a><br>
 💡 <a href="#screenshots">Application screenshots</a><br>
