@@ -124,7 +124,7 @@ Demo credentials are hard coded on the login page at the bottom
 <br/>
 You can view the logs in {ROOT_DIR}/tomcat11/logs/catalina.out
 <br/><br/>
-Dependencies<br/>
+Service Dependencies<br/>
 For demo, you can do without installing Ollama server. However, you will have a mock
 language model interacting with the application. <br/>
 Install Ollama server to have a real language model to interact with the application.
