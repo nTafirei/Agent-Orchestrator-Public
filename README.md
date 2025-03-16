@@ -30,9 +30,11 @@ alt="postgresql" width="40" height="40" style="max-width: 100%;"> </a>
 alt="spring" width="40" height="40" data-canonical-src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" 
 style="max-width: 100%;">Spring</a> 
 <a href="https://ollama.com" target="_blank">
-<img src="https://ollama.com/public/ollama.png" width="40" height="40"/>Ollama</a> |
-<a href="https://www.deepseek.com/" target="_blank"><img src="assets/deepseek.png" width="40" height="40"/>DeepSeek</a> |
-<a href="https://openai.com/" target="_blank"><img src="assets/openai.png" width="40" height="40"/>OpenAI</a>
+<img src="https://ollama.com/public/ollama.png" width="40" height="40"/>Ollama</a> 
+<a href="https://www.deepseek.com/" target="_blank"><img src="assets/deepseek.png" 
+width="40" height="40"/>DeepSeek</a> 
+<a href="https://openai.com/" target="_blank"><img src="assets/openai.png" width="40" height="40"/>
+OpenAI</a>
 </p>
 <br>
 <div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">📌Contents</h3>
