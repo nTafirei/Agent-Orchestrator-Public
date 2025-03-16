@@ -49,7 +49,7 @@ The MaroTech Agent Automation Platform is an AI automation and workflow manageme
 It solves the problem of orchestrating and controlling multiple cross-organisational 
 AI agents – removing complexity, securing control, and enabling businesses to thrive in the AI age.
 <p>
-<br/>Tl;dr
+<br/>📌 Tl;dr
 <br/>
 Download <a href="https://github.com/nTafirei/Agent-Orchestrator-Public/blob/master/dist.zip">dist.zip</a>
 <br/>
@@ -68,7 +68,7 @@ Demo credentials are hard coded on the login page at the bottom
 You can view the logs in {ROOT_DIR}/tomcat11/logs/catalina.out
 <br/>
 </p>
-<p dir="auto">🚀 <a href="#-getting-started">How to start</a><br>
+📌 <p dir="auto">🚀 <a href="#-getting-started">How to start</a><br>
 💡 <a href="#screenshots">Application screenshots</a><br>
 
 <a name="getting-started">How to start</a>
@@ -110,7 +110,7 @@ and<br/>
 (e.g. {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/mysql-spring-db.xml)<br/>
 <br/>
 
-For HSQLDB (default for demo), the properties are in:<br/>
+📌 For HSQLDB (default for demo), the properties are in:<br/>
 
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/hsqldb-spring-db.xml and <br/>
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/hsqldb-hikari.properties
@@ -121,7 +121,7 @@ password=orchestrator_user<br/>
 driverClassName=org.hsqldb.jdbc.JDBCDriver<br/>
 <br/>
 
-If you choose to use MYSQL or PostGreSQL, then <br/>
+📌 If you choose to use MYSQL or PostGreSQL, then <br/>
 Create a database using the settings in <br/>
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/mysql-hikari.properties or <br/>
 {ROOT_DIR}/tomcat11/webapps/orchestrator/WEB-INF/classes/postgres-hikari.properties<br/>
