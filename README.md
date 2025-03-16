@@ -161,9 +161,6 @@ these are the properties that you can change to control server settings and
 which language model to use <br/>
 platform.language.service.option=mock (change to ollama for the real service)<br/>
 platform.ollama.host=http://localhost:11434/ollama
-<br/>
-see https://github.com/ollama4j/ollama4j/blob/main/src/main/java/io/github/ollama4j/types/OllamaModelType.java <br/>
-for all the available options
 <br/><br/>
 Warnings and Limitations
 <br/>
