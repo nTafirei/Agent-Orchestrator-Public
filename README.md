@@ -68,7 +68,7 @@ Demo credentials are hard coded on the login page at the bottom
 You can view the logs in {ROOT_DIR}/tomcat11/logs/catalina.out
 <br/>
 </p>
-📌 <p dir="auto">🚀 <a href="#-getting-started">How to start</a><br>
+<p dir="auto">🚀 <a href="#-getting-started">How to start</a><br>
 💡 <a href="#screenshots">Application screenshots</a><br>
 
 <a name="getting-started">How to start</a>
@@ -149,7 +149,7 @@ Demo credentials are hard coded on the login page at the bottom
 <br/>
 You can view the logs in {ROOT_DIR}/tomcat11/logs/catalina.out
 <br/><br/>
-Service Dependencies<br/>
+📌 Service Dependencies<br/>
 For demo, you can do without installing Ollama server. However, you will have a mock
 language model interacting with the application. <br/>
 Install Ollama server to have a real language model to interact with the application.
@@ -165,13 +165,13 @@ which language model to use <br/>
 platform.language.service.option=mock (change to ollama for the real service)<br/>
 platform.ollama.host=http://localhost:11434/ollama
 <br/><br/>
-Warnings and Limitations
+📌 Warnings and Limitations
 <br/>
 Vector embeddings for RAG are currently only available for PostGreSQL with pg_vector<br/>
 <a href="https://github.com/pgvector/pgvector">https://github.com/pgvector/pgvector</a>
 <br/>
 <br/>
-Sample Prompts
+📌 Sample Prompts
 <br/>
    <a href="docs/business-plan.txt" target="_blank">Business Plan Prompt</a>
 <br/>
@@ -186,7 +186,7 @@ Sample Prompts
    <a href="docs/stock-research.txt" target="_blank">Stock Research Prompt</a>
 <br/>
 <br/>
-<a name="screenshots">Application screenshots</a>
+📌 <a name="screenshots">Application screenshots</a>
 <br/><br/>
 <img src="assets/agent-details.png" height="200" width ="200"/>	
 <img src="assets/cron-tool.png" height="200" width ="200"/>		
