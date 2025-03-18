@@ -310,7 +310,7 @@ Here are some of the main types:
 <p>
 <strong>The MaroTech AI Agent Orchestration platform comes prebuilt with these 6 agents. Each is able to execute generic
 tasks based on the task prompt.<br/>
-The tasks are specified and scheduled via the web based user interface
+The tasks are specified and scheduled via the web based user interface.
 </strong>
 </p>
 </div>
