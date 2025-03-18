@@ -1,8 +1,7 @@
-<h1 align="center"> <a href="https://github.com/nTafirei/Agent-Orchestrator">
-<img src="assets/logo.jpg" alt="MaroTech" width="400" align="center"></a>
-</h1>
 
-<h4 align="center">MaroTech AI Agent Automation Platform</h4>
+<img src="assets/logo.jpg" alt="MaroTech" width="400" align="center">
+
+<h4>MaroTech AI Agent Automation Platform</h4>
 
 <div>
     <a href="https://github.com/nTafirei/Agent-Orchestrator-Public"><img alt="MaroTech" src="assets/logo.jpg" height="20" width ="20"/>MaroTech</a>
