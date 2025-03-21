@@ -1,0 +1,412 @@
+Instruction 1
+
+Format the information inside START_DATA_SECTION_FOR_TASK: 4028a4f195b86fd00195b870094800b1
+and END_DATA_SECTION_FOR_TASK: 4028a4f195b86fd00195b870094800b1
+in a nice table with headings for First Name and Last Name
+
+Set the following HTTP header if you need to do an HTTP SQL Query for this task
+
+START_META_DATA_SECTION_FOR_TASK_4028a4f195b86fd00195b870094800b1
+jobMetadata=eyJhZ2VudFR5cGUiOiJSVUxFX0JBU0VEX1JFRkxFWF9BR0VOVCIsIm5hbWUiOiJSdWxlIEJhc2VkIFJlZmxleCBBZ2VudCBcdTAwMjdzIHRhc2syIiwiaWQiOiI0MDI4YTRmMTk1Yjg2ZmQwMDE5NWI4NzAwOTQ4MDBiMSIsImpvYlR5cGUiOiJXT1JLRkxPVyIsInRva2VuIjoiYTI3NDFhZDQzZjA2ODdjMGYxMGJkMDk3YjUyZTliYzYifQ==
+END_META_DATA_SECTION_FOR_TASK_4028a4f195b86fd00195b870094800b1
+
+Use the following data to accomplish your tasks
+
+START_DATA_SECTION_FOR_TASK_4028a4f195b86fd00195b870094800b1
+Breanne | Harris |
+Ellie | Keebler |
+Forest | Graham |
+Serena | Graham |
+Toney | Reinger |
+END_DATA_SECTION_FOR_TASK_4028a4f195b86fd00195b870094800b1
+
+Use the following HSQLDB database base schema information if necessary
+
+Table an_order metadata :
+id | CHARACTER VARYING | PRIMARY KEY | SYS_PK_10102 | null |
+id | CHARACTER VARYING | CHECK | SYS_CT_10097 | PUBLIC."an_order"."id" IS NOT NULL |
+dateCreated | TIMESTAMP | CHECK | SYS_CT_10098 | PUBLIC."an_order"."dateCreated" IS NOT NULL |
+dateLastUpdated | TIMESTAMP | CHECK | SYS_CT_10099 | PUBLIC."an_order"."dateLastUpdated" IS NOT NULL |
+deleted | BOOLEAN | CHECK | SYS_CT_10100 | PUBLIC."an_order"."deleted" IS NOT NULL |
+online | BOOLEAN | CHECK | SYS_CT_10101 | PUBLIC."an_order"."online" IS NOT NULL |
+total | NUMERIC | null | null | null |
+customer | CHARACTER VARYING | FOREIGN KEY | FKkc1cgixjprv9u3yh13pbslkpj | null |
+org | CHARACTER VARYING | FOREIGN KEY | FKpvy2ldwiap8fqm6rkabr6fxnd | null |
+
+
+Table auth_user metadata :
+id | CHARACTER VARYING | PRIMARY KEY | SYS_PK_10114 | null |
+id | CHARACTER VARYING | CHECK | SYS_CT_10108 | PUBLIC."auth_user"."id" IS NOT NULL |
+dateCreated | TIMESTAMP | CHECK | SYS_CT_10109 | PUBLIC."auth_user"."dateCreated" IS NOT NULL |
+dateLastUpdated | TIMESTAMP | CHECK | SYS_CT_10110 | PUBLIC."auth_user"."dateLastUpdated" IS NOT NULL |
+deleted | BOOLEAN | CHECK | SYS_CT_10111 | PUBLIC."auth_user"."deleted" IS NOT NULL |
+online | BOOLEAN | CHECK | SYS_CT_10112 | PUBLIC."auth_user"."online" IS NOT NULL |
+password | CHARACTER VARYING | null | null | null |
+userName | CHARACTER VARYING | CHECK | SYS_CT_10113 | PUBLIC."auth_user"."userName" IS NOT NULL |
+userName | CHARACTER VARYING | UNIQUE | UK6481d4ejxfpo7jjato3cdpao6 | null |
+systemUser | CHARACTER VARYING | UNIQUE | UKqe72n7816ieaopo9scf0i2dwv | null |
+systemUser | CHARACTER VARYING | FOREIGN KEY | FKaadg3ii7nd0ynaijkowyk3122 | null |
+
+
+Table automation metadata :
+id | CHARACTER VARYING | PRIMARY KEY | SYS_PK_10129 | null |
+id | CHARACTER VARYING | CHECK | SYS_CT_10121 | PUBLIC."automation"."id" IS NOT NULL |
+dateCreated | TIMESTAMP | CHECK | SYS_CT_10122 | PUBLIC."automation"."dateCreated" IS NOT NULL |
+dateLastUpdated | TIMESTAMP | CHECK | SYS_CT_10123 | PUBLIC."automation"."dateLastUpdated" IS NOT NULL |
+deleted | BOOLEAN | CHECK | SYS_CT_10124 | PUBLIC."automation"."deleted" IS NOT NULL |
+online | BOOLEAN | CHECK | SYS_CT_10125 | PUBLIC."automation"."online" IS NOT NULL |
+activeStatus | CHARACTER VARYING | CHECK | SYS_CT_10126 | PUBLIC."automation"."activeStatus" IS NOT NULL |
+activeStatus | CHARACTER VARYING | CHECK | SYS_CT_10127 | (PUBLIC."automation"."activeStatus") IN (('ACTIVE'),('NOT_ACTIVE')) |
+name | CHARACTER VARYING | CHECK | SYS_CT_10128 | PUBLIC."automation"."name" IS NOT NULL |
+name | CHARACTER VARYING | UNIQUE | UKheif4ggnhklvgw3w5wkfw76f2 | null |
+org | CHARACTER VARYING | FOREIGN KEY | FKlridomwee3sgdjdvn0gn0sk7x | null |
+
+
+Table automation_tasks metadata :
+Automation_id | CHARACTER VARYING | CHECK | SYS_CT_10139 | PUBLIC."automation_tasks"."Automation_id" IS NOT NULL |
+Automation_id | CHARACTER VARYING | FOREIGN KEY | FKphemyupn8dx1swv6c5897dte9 | null |
+tasks | CHARACTER VARYING | CHECK | SYS_CT_10140 | PUBLIC."automation_tasks"."tasks" IS NOT NULL |
+tasks | CHARACTER VARYING | UNIQUE | UK1m0r6h4sm07lunvx2hxnlklat | null |
+tasks | CHARACTER VARYING | FOREIGN KEY | FKda4c29ffl6l4vjer8t4b1qyls | null |
+
+
+Table customer metadata :
+id | CHARACTER VARYING | PRIMARY KEY | SYS_PK_10154 | null |
+id | CHARACTER VARYING | CHECK | SYS_CT_10144 | PUBLIC."customer"."id" IS NOT NULL |
+dateCreated | TIMESTAMP | CHECK | SYS_CT_10145 | PUBLIC."customer"."dateCreated" IS NOT NULL |
+dateLastUpdated | TIMESTAMP | CHECK | SYS_CT_10146 | PUBLIC."customer"."dateLastUpdated" IS NOT NULL |
+deleted | BOOLEAN | CHECK | SYS_CT_10147 | PUBLIC."customer"."deleted" IS NOT NULL |
+online | BOOLEAN | CHECK | SYS_CT_10148 | PUBLIC."customer"."online" IS NOT NULL |
+address | CHARACTER VARYING | CHECK | SYS_CT_10149 | PUBLIC."customer"."address" IS NOT NULL |
+balance | NUMERIC | CHECK | SYS_CT_10150 | PUBLIC."customer"."balance" IS NOT NULL |
+firstname | CHARACTER VARYING | CHECK | SYS_CT_10151 | PUBLIC."customer"."firstname" IS NOT NULL |
+lastname | CHARACTER VARYING | CHECK | SYS_CT_10152 | PUBLIC."customer"."lastname" IS NOT NULL |
+town | CHARACTER VARYING | CHECK | SYS_CT_10153 | PUBLIC."customer"."town" IS NOT NULL |
+org | CHARACTER VARYING | FOREIGN KEY | FKjbxfu69wqlccvfhs7mc4l33g2 | null |
+
+
+Table feature metadata :
+id | CHARACTER VARYING | PRIMARY KEY | SYS_PK_10171 | null |
+id | CHARACTER VARYING | CHECK | SYS_CT_10165 | PUBLIC."feature"."id" IS NOT NULL |
+dateCreated | TIMESTAMP | CHECK | SYS_CT_10166 | PUBLIC."feature"."dateCreated" IS NOT NULL |
+dateLastUpdated | TIMESTAMP | CHECK | SYS_CT_10167 | PUBLIC."feature"."dateLastUpdated" IS NOT NULL |
+deleted | BOOLEAN | CHECK | SYS_CT_10168 | PUBLIC."feature"."deleted" IS NOT NULL |
+online | BOOLEAN | CHECK | SYS_CT_10169 | PUBLIC."feature"."online" IS NOT NULL |
+name | CHARACTER VARYING | CHECK | SYS_CT_10170 | PUBLIC."feature"."name" IS NOT NULL |
+
+
+Table jdbc_data_source metadata :
+id | CHARACTER VARYING | PRIMARY KEY | SYS_PK_10189 | null |
+id | CHARACTER VARYING | CHECK | SYS_CT_10178 | PUBLIC."jdbc_data_source"."id" IS NOT NULL |
+dateCreated | TIMESTAMP | CHECK | SYS_CT_10179 | PUBLIC."jdbc_data_source"."dateCreated" IS NOT NULL |
+dateLastUpdated | TIMESTAMP | CHECK | SYS_CT_10180 | PUBLIC."jdbc_data_source"."dateLastUpdated" IS NOT NULL |
+deleted | BOOLEAN | CHECK | SYS_CT_10181 | PUBLIC."jdbc_data_source"."deleted" IS NOT NULL |
+online | BOOLEAN | CHECK | SYS_CT_10182 | PUBLIC."jdbc_data_source"."online" IS NOT NULL |
+cachePrepStatements | BOOLEAN | null | null | null |
+driverClassName | CHARACTER VARYING | CHECK | SYS_CT_10183 | PUBLIC."jdbc_data_source"."driverClassName" IS NOT NULL |
+jdbcUrl | CHARACTER VARYING | CHECK | SYS_CT_10184 | PUBLIC."jdbc_data_source"."jdbcUrl" IS NOT NULL |
+name | CHARACTER VARYING | CHECK | SYS_CT_10185 | PUBLIC."jdbc_data_source"."name" IS NOT NULL |
+password | CHARACTER VARYING | CHECK | SYS_CT_10186 | PUBLIC."jdbc_data_source"."password" IS NOT NULL |
+prepStmtCacheSize | INTEGER | null | null | null |
+prepStmtCacheSqlLimit | INTEGER | null | null | null |
+schemaName | CHARACTER VARYING | CHECK | SYS_CT_10187 | PUBLIC."jdbc_data_source"."schemaName" IS NOT NULL |
+username | CHARACTER VARYING | CHECK | SYS_CT_10188 | PUBLIC."jdbc_data_source"."username" IS NOT NULL |
+org | CHARACTER VARYING | FOREIGN KEY | FKbxhf98v7gsx3q3x50b9od5ide | null |
+
+
+Table language_model metadata :
+id | CHARACTER VARYING | PRIMARY KEY | SYS_PK_10207 | null |
+id | CHARACTER VARYING | CHECK | SYS_CT_10201 | PUBLIC."language_model"."id" IS NOT NULL |
+dateCreated | TIMESTAMP | CHECK | SYS_CT_10202 | PUBLIC."language_model"."dateCreated" IS NOT NULL |
+dateLastUpdated | TIMESTAMP | CHECK | SYS_CT_10203 | PUBLIC."language_model"."dateLastUpdated" IS NOT NULL |
+deleted | BOOLEAN | CHECK | SYS_CT_10204 | PUBLIC."language_model"."deleted" IS NOT NULL |
+online | BOOLEAN | CHECK | SYS_CT_10205 | PUBLIC."language_model"."online" IS NOT NULL |
+apiKey | CHARACTER VARYING | null | null | null |
+name | CHARACTER VARYING | CHECK | SYS_CT_10206 | PUBLIC."language_model"."name" IS NOT NULL |
+url | CHARACTER VARYING | null | null | null |
+
+
+Table notification metadata :
+id | CHARACTER VARYING | PRIMARY KEY | SYS_PK_10221 | null |
+id | CHARACTER VARYING | CHECK | SYS_CT_10214 | PUBLIC."notification"."id" IS NOT NULL |
+dateCreated | TIMESTAMP | CHECK | SYS_CT_10215 | PUBLIC."notification"."dateCreated" IS NOT NULL |
+dateLastUpdated | TIMESTAMP | CHECK | SYS_CT_10216 | PUBLIC."notification"."dateLastUpdated" IS NOT NULL |
+deleted | BOOLEAN | CHECK | SYS_CT_10217 | PUBLIC."notification"."deleted" IS NOT NULL |
+online | BOOLEAN | CHECK | SYS_CT_10218 | PUBLIC."notification"."online" IS NOT NULL |
+body | CHARACTER VARYING | CHECK | SYS_CT_10219 | PUBLIC."notification"."body" IS NOT NULL |
+subject | CHARACTER VARYING | CHECK | SYS_CT_10220 | PUBLIC."notification"."subject" IS NOT NULL |
+org | CHARACTER VARYING | FOREIGN KEY | FKe6kfjg8hjitaktyq6gj11xadd | null |
+recipient | CHARACTER VARYING | FOREIGN KEY | FK1klems9ly23pkll67ywoeyo6d | null |
+
+
+Table order_products metadata :
+order_id | CHARACTER VARYING | CHECK | SYS_CT_10229 | PUBLIC."order_products"."order_id" IS NOT NULL |
+order_id | CHARACTER VARYING | FOREIGN KEY | FK77llqbdqiovhftbj3n1mn4u2t | null |
+product_id | CHARACTER VARYING | CHECK | SYS_CT_10230 | PUBLIC."order_products"."product_id" IS NOT NULL |
+product_id | CHARACTER VARYING | FOREIGN KEY | FK9nx65a7qlx7d91585dy621l22 | null |
+
+
+Table org metadata :
+id | CHARACTER VARYING | PRIMARY KEY | SYS_PK_10240 | null |
+id | CHARACTER VARYING | CHECK | SYS_CT_10234 | PUBLIC."org"."id" IS NOT NULL |
+dateCreated | TIMESTAMP | CHECK | SYS_CT_10235 | PUBLIC."org"."dateCreated" IS NOT NULL |
+dateLastUpdated | TIMESTAMP | CHECK | SYS_CT_10236 | PUBLIC."org"."dateLastUpdated" IS NOT NULL |
+deleted | BOOLEAN | CHECK | SYS_CT_10237 | PUBLIC."org"."deleted" IS NOT NULL |
+online | BOOLEAN | CHECK | SYS_CT_10238 | PUBLIC."org"."online" IS NOT NULL |
+address | CHARACTER VARYING | null | null | null |
+address2 | CHARACTER VARYING | null | null | null |
+city | CHARACTER VARYING | null | null | null |
+country | CHARACTER VARYING | null | null | null |
+email | CHARACTER VARYING | null | null | null |
+fax | CHARACTER VARYING | null | null | null |
+name | CHARACTER VARYING | CHECK | SYS_CT_10239 | PUBLIC."org"."name" IS NOT NULL |
+postcode | CHARACTER VARYING | null | null | null |
+province | CHARACTER VARYING | null | null | null |
+telephone | CHARACTER VARYING | null | null | null |
+
+
+Table product metadata :
+id | CHARACTER VARYING | PRIMARY KEY | SYS_PK_10254 | null |
+id | CHARACTER VARYING | CHECK | SYS_CT_10247 | PUBLIC."product"."id" IS NOT NULL |
+dateCreated | TIMESTAMP | CHECK | SYS_CT_10248 | PUBLIC."product"."dateCreated" IS NOT NULL |
+dateLastUpdated | TIMESTAMP | CHECK | SYS_CT_10249 | PUBLIC."product"."dateLastUpdated" IS NOT NULL |
+deleted | BOOLEAN | CHECK | SYS_CT_10250 | PUBLIC."product"."deleted" IS NOT NULL |
+online | BOOLEAN | CHECK | SYS_CT_10251 | PUBLIC."product"."online" IS NOT NULL |
+name | CHARACTER VARYING | CHECK | SYS_CT_10252 | PUBLIC."product"."name" IS NOT NULL |
+price | NUMERIC | CHECK | SYS_CT_10253 | PUBLIC."product"."price" IS NOT NULL |
+org | CHARACTER VARYING | FOREIGN KEY | FK3w7gl37c85upp7p0escukhlww | null |
+
+
+Table task metadata :
+id | CHARACTER VARYING | PRIMARY KEY | SYS_PK_10278 | null |
+id | CHARACTER VARYING | CHECK | SYS_CT_10262 | PUBLIC."task"."id" IS NOT NULL |
+dateCreated | TIMESTAMP | CHECK | SYS_CT_10263 | PUBLIC."task"."dateCreated" IS NOT NULL |
+dateLastUpdated | TIMESTAMP | CHECK | SYS_CT_10264 | PUBLIC."task"."dateLastUpdated" IS NOT NULL |
+deleted | BOOLEAN | CHECK | SYS_CT_10265 | PUBLIC."task"."deleted" IS NOT NULL |
+online | BOOLEAN | CHECK | SYS_CT_10266 | PUBLIC."task"."online" IS NOT NULL |
+cronExpression | CHARACTER VARYING | null | null | null |
+databaseSchema | CHARACTER VARYING | null | null | null |
+executionOrder | INTEGER | CHECK | SYS_CT_10267 | PUBLIC."task"."executionOrder" IS NOT NULL |
+executionTime | TIMESTAMP | null | null | null |
+fetchSchemaInfo | BOOLEAN | null | null | null |
+frequency | CHARACTER VARYING | CHECK | SYS_CT_10268 | PUBLIC."task"."frequency" IS NOT NULL |
+frequency | CHARACTER VARYING | CHECK | SYS_CT_10269 | (PUBLIC."task"."frequency") IN (('REPEATING'),('NON_REPEATING'),('REACTIVE'),('WORKFLOW_MANAGED')) |
+instruction | CHARACTER VARYING | CHECK | SYS_CT_10270 | PUBLIC."task"."instruction" IS NOT NULL |
+jobStatus | CHARACTER VARYING | CHECK | SYS_CT_10271 | PUBLIC."task"."jobStatus" IS NOT NULL |
+jobStatus | CHARACTER VARYING | CHECK | SYS_CT_10272 | (PUBLIC."task"."jobStatus") IN (('PENDING'),('CREATED'),('EXECUTED'),('SUSPENDED')) |
+lastExecTime | TIMESTAMP | null | null | null |
+name | CHARACTER VARYING | CHECK | SYS_CT_10273 | PUBLIC."task"."name" IS NOT NULL |
+name | CHARACTER VARYING | UNIQUE | UKog1eincykglt5pn45f8693vlb | null |
+outputCamelRoute | CHARACTER VARYING | CHECK | SYS_CT_10274 | PUBLIC."task"."outputCamelRoute" IS NOT NULL |
+partOfWorkflow | BOOLEAN | CHECK | SYS_CT_10275 | PUBLIC."task"."partOfWorkflow" IS NOT NULL |
+prompt | CHARACTER VARYING | null | null | null |
+query | CHARACTER VARYING | null | null | null |
+taskType | CHARACTER VARYING | CHECK | SYS_CT_10276 | PUBLIC."task"."taskType" IS NOT NULL |
+taskType | CHARACTER VARYING | CHECK | SYS_CT_10277 | (PUBLIC."task"."taskType") IN (('ORIGINAL'),('COPY')) |
+token | CHARACTER VARYING | null | null | null |
+agent | CHARACTER VARYING | FOREIGN KEY | FKlbpxhwd1a00fwndh8r5fuyux0 | null |
+automation | CHARACTER VARYING | FOREIGN KEY | FKoob0qu0y2pyg1g5n8731gr3w8 | null |
+jdbcDataSource | CHARACTER VARYING | FOREIGN KEY | FKrddato4a1df5lx37b2te7prbj | null |
+languageModel | CHARACTER VARYING | FOREIGN KEY | FKd6svgr8fknxlhtx2etn9y5wjo | null |
+org | CHARACTER VARYING | FOREIGN KEY | FK86s4uxntum8qe2xcpa3g76ll3 | null |
+parent | CHARACTER VARYING | UNIQUE | UKc0jyruuha10pnmqcucd3gxpa2 | null |
+parent | CHARACTER VARYING | FOREIGN KEY | FKmlnya09xalt0rjybgaqvssqyb | null |
+workflow | CHARACTER VARYING | FOREIGN KEY | FKfgrhj8epgyp67xkmi4prw0duw | null |
+
+
+Table task_users metadata :
+task_id | CHARACTER VARYING | CHECK | SYS_CT_10298 | PUBLIC."task_users"."task_id" IS NOT NULL |
+task_id | CHARACTER VARYING | FOREIGN KEY | FK5h10nqyrgjqdlpd5cfrhccr17 | null |
+user_id | CHARACTER VARYING | CHECK | SYS_CT_10299 | PUBLIC."task_users"."user_id" IS NOT NULL |
+user_id | CHARACTER VARYING | FOREIGN KEY | FKcr9tghn80ds3wu5sgsnygax7b | null |
+
+
+Table template metadata :
+id | CHARACTER VARYING | PRIMARY KEY | SYS_PK_10315 | null |
+id | CHARACTER VARYING | CHECK | SYS_CT_10303 | PUBLIC."template"."id" IS NOT NULL |
+dateCreated | TIMESTAMP | CHECK | SYS_CT_10304 | PUBLIC."template"."dateCreated" IS NOT NULL |
+dateLastUpdated | TIMESTAMP | CHECK | SYS_CT_10305 | PUBLIC."template"."dateLastUpdated" IS NOT NULL |
+deleted | BOOLEAN | CHECK | SYS_CT_10306 | PUBLIC."template"."deleted" IS NOT NULL |
+online | BOOLEAN | CHECK | SYS_CT_10307 | PUBLIC."template"."online" IS NOT NULL |
+activeStatus | TINYINT | CHECK | SYS_CT_10308 | PUBLIC."template"."activeStatus" IS NOT NULL |
+activeStatus | TINYINT | CHECK | SYS_CT_10309 | (PUBLIC."template"."activeStatus">=0) AND (PUBLIC."template"."activeStatus"<=1) |
+cronExpression | CHARACTER VARYING | null | null | null |
+databaseSchema | CHARACTER VARYING | null | null | null |
+executionTime | TIMESTAMP | null | null | null |
+fetchSchemaInfo | BOOLEAN | null | null | null |
+frequency | CHARACTER VARYING | CHECK | SYS_CT_10310 | PUBLIC."template"."frequency" IS NOT NULL |
+frequency | CHARACTER VARYING | CHECK | SYS_CT_10311 | (PUBLIC."template"."frequency") IN (('REPEATING'),('NON_REPEATING'),('REACTIVE'),('WORKFLOW_MANAGED')) |
+instruction | CHARACTER VARYING | CHECK | SYS_CT_10312 | PUBLIC."template"."instruction" IS NOT NULL |
+name | CHARACTER VARYING | CHECK | SYS_CT_10313 | PUBLIC."template"."name" IS NOT NULL |
+name | CHARACTER VARYING | UNIQUE | UKhfc26ui0uirmpsvx87o30i94f | null |
+outputCamelRoute | CHARACTER VARYING | CHECK | SYS_CT_10314 | PUBLIC."template"."outputCamelRoute" IS NOT NULL |
+prompt | CHARACTER VARYING | null | null | null |
+query | CHARACTER VARYING | null | null | null |
+agent | CHARACTER VARYING | FOREIGN KEY | FKb8vy4l6elwsx6k4s7yie2magx | null |
+jdbcDataSource | CHARACTER VARYING | FOREIGN KEY | FKmmtn4vnswn1ll3nlkg0rx7w1 | null |
+languageModel | CHARACTER VARYING | FOREIGN KEY | FKf7gwfp0kcwnecb0rv4u521dwu | null |
+org | CHARACTER VARYING | FOREIGN KEY | FK26kn2fbk1apkkbbuxwj3s15v2 | null |
+
+
+Table user metadata :
+id | CHARACTER VARYING | PRIMARY KEY | SYS_PK_10341 | null |
+id | CHARACTER VARYING | CHECK | SYS_CT_10329 | PUBLIC."user"."id" IS NOT NULL |
+dateCreated | TIMESTAMP | CHECK | SYS_CT_10330 | PUBLIC."user"."dateCreated" IS NOT NULL |
+dateLastUpdated | TIMESTAMP | CHECK | SYS_CT_10331 | PUBLIC."user"."dateLastUpdated" IS NOT NULL |
+deleted | BOOLEAN | CHECK | SYS_CT_10332 | PUBLIC."user"."deleted" IS NOT NULL |
+online | BOOLEAN | CHECK | SYS_CT_10333 | PUBLIC."user"."online" IS NOT NULL |
+activeStatus | CHARACTER VARYING | CHECK | SYS_CT_10334 | (PUBLIC."user"."activeStatus") IN (('ACTIVE'),('NOT_ACTIVE')) |
+address | CHARACTER VARYING | null | null | null |
+address2 | CHARACTER VARYING | null | null | null |
+agentType | CHARACTER VARYING | CHECK | SYS_CT_10335 | (PUBLIC."user"."agentType") IN (('RULE_BASED_REFLEX_AGENT'),('MODEL_BASED_REFLEX_AGENT'),('GOAL_BASED_AGENT'),('UTILITY_BASED_AGENT'),('REACTIVE_AGENT')) |
+city | CHARACTER VARYING | null | null | null |
+country | CHARACTER VARYING | CHECK | SYS_CT_10336 | PUBLIC."user"."country" IS NOT NULL |
+dateOfBirth | DATE | null | null | null |
+email | CHARACTER VARYING | null | null | null |
+fax | CHARACTER VARYING | null | null | null |
+firstName | CHARACTER VARYING | CHECK | SYS_CT_10337 | PUBLIC."user"."firstName" IS NOT NULL |
+gender | CHARACTER VARYING | CHECK | SYS_CT_10338 | (PUBLIC."user"."gender") IN (('MALE'),('FEMALE')) |
+lastName | CHARACTER VARYING | null | null | null |
+middleName | CHARACTER VARYING | null | null | null |
+mobilePhone | CHARACTER VARYING | null | null | null |
+nationalId | CHARACTER VARYING | null | null | null |
+postcode | CHARACTER VARYING | null | null | null |
+province | CHARACTER VARYING | null | null | null |
+telephone | CHARACTER VARYING | null | null | null |
+userType | CHARACTER VARYING | CHECK | SYS_CT_10339 | (PUBLIC."user"."userType") IN (('HUMAN'),('AGENT')) |
+verified | CHARACTER VARYING | CHECK | SYS_CT_10340 | (PUBLIC."user"."verified") IN (('YES'),('NO')) |
+org | CHARACTER VARYING | FOREIGN KEY | FK8akgut0b8a42uwoy770g8suq0 | null |
+
+
+Table user_role metadata :
+id | CHARACTER VARYING | PRIMARY KEY | SYS_PK_10365 | null |
+id | CHARACTER VARYING | CHECK | SYS_CT_10359 | PUBLIC."user_role"."id" IS NOT NULL |
+dateCreated | TIMESTAMP | CHECK | SYS_CT_10360 | PUBLIC."user_role"."dateCreated" IS NOT NULL |
+dateLastUpdated | TIMESTAMP | CHECK | SYS_CT_10361 | PUBLIC."user_role"."dateLastUpdated" IS NOT NULL |
+deleted | BOOLEAN | CHECK | SYS_CT_10362 | PUBLIC."user_role"."deleted" IS NOT NULL |
+online | BOOLEAN | CHECK | SYS_CT_10363 | PUBLIC."user_role"."online" IS NOT NULL |
+roleName | CHARACTER VARYING | CHECK | SYS_CT_10364 | PUBLIC."user_role"."roleName" IS NOT NULL |
+
+
+Table user_roles metadata :
+user_id | CHARACTER VARYING | PRIMARY KEY | SYS_PK_10374 | null |
+user_id | CHARACTER VARYING | CHECK | SYS_CT_10372 | PUBLIC."user_roles"."user_id" IS NOT NULL |
+user_id | CHARACTER VARYING | FOREIGN KEY | FK40cm955hgg5oxf1oax8mqw0c4 | null |
+role_id | CHARACTER VARYING | PRIMARY KEY | SYS_PK_10374 | null |
+role_id | CHARACTER VARYING | CHECK | SYS_CT_10373 | PUBLIC."user_roles"."role_id" IS NOT NULL |
+role_id | CHARACTER VARYING | FOREIGN KEY | FK5xsglwt79jpm7acy56ja1r9t1 | null |
+
+
+Table workflow metadata :
+id | CHARACTER VARYING | PRIMARY KEY | SYS_PK_10403 | null |
+id | CHARACTER VARYING | CHECK | SYS_CT_10388 | PUBLIC."workflow"."id" IS NOT NULL |
+dateCreated | TIMESTAMP | CHECK | SYS_CT_10389 | PUBLIC."workflow"."dateCreated" IS NOT NULL |
+dateLastUpdated | TIMESTAMP | CHECK | SYS_CT_10390 | PUBLIC."workflow"."dateLastUpdated" IS NOT NULL |
+deleted | BOOLEAN | CHECK | SYS_CT_10391 | PUBLIC."workflow"."deleted" IS NOT NULL |
+online | BOOLEAN | CHECK | SYS_CT_10392 | PUBLIC."workflow"."online" IS NOT NULL |
+activeStatus | CHARACTER VARYING | CHECK | SYS_CT_10393 | PUBLIC."workflow"."activeStatus" IS NOT NULL |
+activeStatus | CHARACTER VARYING | CHECK | SYS_CT_10394 | (PUBLIC."workflow"."activeStatus") IN (('ACTIVE'),('NOT_ACTIVE')) |
+agentType | CHARACTER VARYING | CHECK | SYS_CT_10395 | (PUBLIC."workflow"."agentType") IN (('RULE_BASED_REFLEX_AGENT'),('MODEL_BASED_REFLEX_AGENT'),('GOAL_BASED_AGENT'),('UTILITY_BASED_AGENT'),('REACTIVE_AGENT')) |
+cronExpression | CHARACTER VARYING | null | null | null |
+executionTime | TIMESTAMP | null | null | null |
+frequency | CHARACTER VARYING | CHECK | SYS_CT_10396 | PUBLIC."workflow"."frequency" IS NOT NULL |
+frequency | CHARACTER VARYING | CHECK | SYS_CT_10397 | (PUBLIC."workflow"."frequency") IN (('REPEATING'),('NON_REPEATING'),('REACTIVE'),('WORKFLOW_MANAGED')) |
+instruction | CHARACTER VARYING | CHECK | SYS_CT_10398 | PUBLIC."workflow"."instruction" IS NOT NULL |
+jobStatus | CHARACTER VARYING | CHECK | SYS_CT_10399 | PUBLIC."workflow"."jobStatus" IS NOT NULL |
+jobStatus | CHARACTER VARYING | CHECK | SYS_CT_10400 | (PUBLIC."workflow"."jobStatus") IN (('PENDING'),('CREATED'),('EXECUTED'),('SUSPENDED')) |
+lastExecTime | TIMESTAMP | null | null | null |
+name | CHARACTER VARYING | CHECK | SYS_CT_10401 | PUBLIC."workflow"."name" IS NOT NULL |
+name | CHARACTER VARYING | UNIQUE | UKejxwexa2jw617pb3o682id9li | null |
+outputCamelRoute | CHARACTER VARYING | CHECK | SYS_CT_10402 | PUBLIC."workflow"."outputCamelRoute" IS NOT NULL |
+reactiveCamelRoute | CHARACTER VARYING | null | null | null |
+stopOnFailure | BOOLEAN | null | null | null |
+token | CHARACTER VARYING | null | null | null |
+languageModel | CHARACTER VARYING | FOREIGN KEY | FKgkbg3kqad2go6iy6bir2day3q | null |
+org | CHARACTER VARYING | FOREIGN KEY | FK9efm9en7mlthwhwmh129y31of | null |
+
+
+Table workflow_tasks metadata :
+Workflow_id | CHARACTER VARYING | CHECK | SYS_CT_10423 | PUBLIC."workflow_tasks"."Workflow_id" IS NOT NULL |
+Workflow_id | CHARACTER VARYING | FOREIGN KEY | FKdakhu3owfgfxcs57kgwa8kqw4 | null |
+tasks | CHARACTER VARYING | CHECK | SYS_CT_10424 | PUBLIC."workflow_tasks"."tasks" IS NOT NULL |
+tasks | CHARACTER VARYING | UNIQUE | UK95yshnsulemo9lcvnr34tftks | null |
+tasks | CHARACTER VARYING | FOREIGN KEY | FKtmn3cb133uagyjo4891uyvccn | null |
+
+
+Table workflow_users metadata :
+workflow_id | CHARACTER VARYING | CHECK | SYS_CT_10428 | PUBLIC."workflow_users"."workflow_id" IS NOT NULL |
+workflow_id | CHARACTER VARYING | FOREIGN KEY | FKn9qw9jg55gxwym8w0mjpb9fr | null |
+user_id | CHARACTER VARYING | CHECK | SYS_CT_10429 | PUBLIC."workflow_users"."user_id" IS NOT NULL |
+user_id | CHARACTER VARYING | FOREIGN KEY | FK49axoh8odw09xc9iur6nv0n0c | null |
+
+
+
+
+
+Format your report for human readability.
+Append the following marker at the start of the explanation of your reasoning: START OF REASONING.
+Append the following marker at the end of the explanation of your reasoning: END OF REASONING.
+Append the following marker at the start of your report of the actual solution: START OF SOLUTION
+Append the following marker at the end of your report
+of the actual solution: END OF SOLUTION
+
+//Fetching Instructions:
+The following instructions apply only if you need to queries to the datastore of the schema provided above:
+Send SQL queries by HTTP POST to http://localhost/orchestrator/web-hook-query.
+Compose the body of your HTTP POST as ANSI SQL queries. Do no make SQL statements that can change the database
+Any fetched data will be returned to you in a tabular format
+Preface your HTTP POST body with START DATA QUERY - ITEM # X where X is an incrementing integer in
+the order of query requests.
+Prepend the following marker END OF DATA QUERY - ITEM # X where X is an incrementing integer in
+the order of accumulated queries.
+
+The job metadata is included in each section for each task.
+
+Here is an example:
+START_META_DATA_SECTION_FOR_TASK_4028a4f195b857cb0195b857e984007d
+eyJhZ2VudFR5cGUiOiJSVUxFX0JBU0VEX1JFRkxFWF9BR0VOVCIsIm5hbWUiOiJSdWxlIEJhc2VkIFJlZmxleCBBZ
+2VudCBcdTAwMjdzIHdvcmtmbG93IHRhc2sgMiIsImlkIjoiNDAyOGE0ZjE5NWI4NTdjYjAxOTViODU3ZTk4NDAwN2
+QiLCJqb2JUeXBlIjoiV09SS0ZMT1ciLCJ0b2tlbiI6IjcwOWUyZjIxZGRjNDljOTk3ZTUxYTRhNTg5NTc3ODdlIn0=
+END_META_DATA_SECTION_FOR_TASK_4028a4f195b857cb0195b857e984007d
+
+In your HTTP POST:
+    Set an HTTP header named 'jobMetadata' with the relevant value as indicated above.
+    Set an HTTP header with name 'schemaName' and with the value of the database schema you would like to
+    query based on the schema information provided in this context.
+
+You can copy that into the required headers.
+In your HTTP POST request, set the body of the HTTP POST to the actual query strings between
+the markers defined above.
+ Each query should be on a separate line
+.Each SQL query must be a PreparedStatement with any parameters set
+Here are examples of the HTTP POST body:
+[
+    {
+        "statement": "select * from Product where price < ?1 and name LIKE :name;",
+        "parameters": [
+            {"value": 10.00, "like": false, "type": "Double"},
+            {"value": "Tres", "like": true, "type": "String"}
+        ]
+    },
+    {
+        "statement": "select * from AnOrder where total > ?1 and customerId =?2;",
+        "parameters": [
+            {"value": "20.00", "like": false, "type": "Double"},
+            {"value": "40285cf19581137e01958113bee2", "like": true, "type": "String"}
+        ]
+    }
+]
+You must supply the correct number of parameter values and in the order for which they must be
+set in the PreparedStatement
+.The 'like' property in the JSON indicates whether the statement must make a SQL LIKE comparison
+for strings.
+Do not query multiple schemas at once.
+The 'type' property in the JSON of the parameter must be one of : INTEGER, DOUBLE, STRING,
+LONG FLOAT, BIG_DECIMAL, DATE or TIME_STAMP
+All SQL queries must start with a SELECT keyword.
+After you get a response to your SQL queries via HTTP, you will parse the data and figure
+out your answer accordingly.
+If you fail to get a response after 30 seconds, continue with the information that you have
+and make a best effort to craft a solution.
+In case of such an event, please note this in your explanation section and include the details
+
